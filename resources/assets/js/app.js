@@ -13,7 +13,7 @@ window.Vue = require('vue');
 Vue.component('password-email', require('./components/PasswordEmailRequest.vue'));
 Vue.component('modal', require('./components/Modal.vue'));
 Vue.component('add-user', require('./components/AddUser.vue'));
-Vue.component('delete-button', require('./components/DeleteButton.vue'));
+Vue.component('delete-button', require('./components/SlideDeleteButton.vue'));
 Vue.component('user-app', require('./components/UsersApp.vue'));
 
 window.eventHub = new Vue();
