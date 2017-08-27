@@ -43,7 +43,7 @@
             @if($errors->has('enquiry'))
             <span class="error-message">{{ $errors->first('enquiry') }}</span>
             @endif
-            <textarea name="enquiry" class="w-100 ba bw1 lh-copy br2 colour-p input h4 pl2">{{ old('enquiry') }}</textarea>
+            <textarea name="enquiry" class="w-100 ba bw1 lh-copy br2 colour-p input h4 pl2 bdc-p">{{ old('enquiry') }}</textarea>
         </div>
         <div class="mt4 mb5 tc">
             <button type="submit" class="ph4 pv2 ba br3 bw2 colour-p f4 f3-ns hov-s strong-type ttu bgc-white bdc-p">Send Message</button>
