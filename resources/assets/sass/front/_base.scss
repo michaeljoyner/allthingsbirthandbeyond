@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  .main-navbar, .main-footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+
+  .page-content {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+}

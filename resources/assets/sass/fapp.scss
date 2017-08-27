@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Graviola';
+  src: url('./fonts/graviola.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/graviola.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/graviola.woff') format('woff'), /* Pretty Modern Browsers */
+  url('./fonts/graviola.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('./fonts/graviola.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@import "mixins/media";
+
+// Variables
+@import "front/variables";
+
+// Bootstrap
+@import "node_modules/tachyons-sass/tachyons.scss";
+
+@import "front/base";
+
+@import "front/utilities/type";
+@import "front/utilities/colours";
+@import "front/utilities/hovers";
+@import "front/utilities/animations";
+@import "front/utilities/misc";
+
+@import "front/components/navbar";
+
+@import "front/pages/home";
+@import "front/pages/about";
+@import "front/pages/testimonials";
+@import "front/pages/contact";
+@import "front/pages/thanks";
+
+
+
+

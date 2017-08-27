@@ -12,8 +12,27 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.home.page');
 });
+
+Route::get('about', function () {
+    return view('front.about.page');
+});
+
+Route::get('testimonials', function () {
+    return view('front.testimonials.page');
+});
+
+Route::get('testimonials', function () {
+    return view('front.testimonials.page');
+});
+
+Route::get('thanks', function () {
+    return view('front.thanks');
+});
+
+Route::get('contact', 'ContactController@show');
+Route::post('contact', 'ContactController@store');
 
 Route::get('admin/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('admin/login', 'Auth\LoginController@login');

@@ -1,0 +1,31 @@
+.hov-s {
+  &:hover {
+    color: $site_secondary;
+  }
+}
+
+button.hov-s {
+  &:hover {
+    border-color: $site_secondary;
+  }
+}
+
+.icon.hov-p {
+  &:hover {
+    path {
+      fill: $site_primary;
+    }
+  }
+}
+
+.icon.hov-s {
+  &:hover {
+    .colour-fill {
+      fill: $site_secondary;
+    }
+
+    .colour-stroke {
+      stroke: $site_secondary;
+    }
+  }
+}

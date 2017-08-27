@@ -1,0 +1,46 @@
+.main-navbar {
+
+  &.scrolled {
+    background-color: $white;
+  }
+
+  .nav-list a.active {
+    color: $site_secondary;
+  }
+
+  @include respond-to(small) {
+    position: fixed;
+    height: 60px;
+    background-color: $white;
+
+    #nav-trigger:checked + .nav-list {
+      transform: rotateX(0deg);
+
+      a, label {
+        opacity: 1;
+      }
+    }
+
+    .nav-list {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: block;
+      background: $white;
+      transform: rotateX(-90deg);
+      transition: .4s;
+      transform-origin: top;
+      box-shadow: 0 0 3px 3px rgba(0,0,0,.4);
+
+      a, label {
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+        padding-left: 0;
+        opacity: 0;
+        transition: .3s;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.fade-in-up {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
+  animation-duration: .7s;
+  animation-timing-function: ease;
+  z-index: 0;
+}
+
+.bobby {
+  animation-name: littleBobFloat, littleBob;
+  animation-fill-mode: forwards;
+  animation-duration: .3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-direction: normal, alternate;
+}
+
+.an-del1 {
+  animation-delay: .1s;
+}
+
+.an-del2 {
+  animation-delay: .2s;
+}
+
+.an-del3 {
+  animation-delay: .3s;
+}
+
+.an-del4 {
+  animation-delay: .4s;
+}
+
+.an-del5 {
+  animation-delay: .5s;
+}
+
+.an-del6 {
+  animation-delay: .6s;
+}
+
+.an-del7 {
+  animation-delay: .7s;
+}
+
+.an-del8 {
+  animation-delay: .8s;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate3d(-20px, 20px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes littleBob {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, 4px, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes littleBobFloat {
+  100% { transform: translate3d(0, 0, 0); }
+}
+

@@ -1,0 +1,39 @@
+.colour-p {
+  color: $site_primary;
+}
+
+.colour-s {
+  color: $site_secondary;
+}
+
+.colour-w {
+  color: $white;
+}
+
+.colour-muted {
+  color: $site_muted;
+}
+
+.colour-neon {
+  color: $site_neon;
+}
+
+.bgc-dark {
+  background-color: $site_primary;
+}
+
+.bgc-light {
+  background-color: $site_muted;
+}
+
+.bgc-white {
+  background-color: $white;
+}
+
+.bdc-p {
+  border-color: $site_primary;
+}
+
+.bgc-dark-soft {
+  background-color: rgba($white, .1);
+}
