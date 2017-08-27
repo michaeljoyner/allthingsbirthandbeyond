@@ -16,10 +16,10 @@
     <h2 class="f2 f1-ns colour-p strong-type tc mt5 mb2 ttu">Testimonials</h2>
     <p class="ph3 body-type b colour-p tc f5 f4-ns mt4">I could not be more proud and thankful of my clients!</p>
     <article class="fade-in-up an-del1 mv4 w-90 mw8 center pa4 bgc-light body-type flex">
-        <div class="w-40 flex justify-center items-center">
+        <div class="dn w-40 flex-ns justify-center items-center">
             <img src="/images/testimonials.jpg" alt="A client in the birthing process" width="400px" class="db center">
         </div>
-        <div class="w-60 pl4 flex-auto">
+        <div class="w-100 w-60-ns pl0 pl4-ns flex-auto">
             <p class="colour-p f5 f4-ns lh-copy mt0">We highly recommend Melody. She is an incredible doula who genuinely cares for others and wants to help families to have their wishes for their pregnancy and birth become a reality.</p>
             <p class="colour-p f5 f4-ns lh-copy i tr mb0">&mdash; Tracy and Rob Oliver</p>
         </div>
