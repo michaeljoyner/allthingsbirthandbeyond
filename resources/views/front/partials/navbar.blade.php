@@ -10,5 +10,5 @@
         <a class="ph4 f3 link ttu colour-p hov-s @activeclass('contact')" href="/contact">Contact</a>
         <label class="dn-ns ph4 f3 link ttu colour-p" for="nav-trigger">Close</label>
     </nav>
-    <label for="nav-trigger" class="strong-type db dn-ns link ttu colour-p pr3" id="nav-trigger">Menu</label>
+    <label for="nav-trigger" class="strong-type db dn-l link ttu colour-p pr3" id="nav-trigger">Menu</label>
 </div>
