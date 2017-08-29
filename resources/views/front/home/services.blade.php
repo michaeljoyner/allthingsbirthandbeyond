@@ -1,7 +1,7 @@
 <section class="bgc-dark pt4 flex flex-column justify-center items-center">
     <h1 class="f2 f1-ns tc colour-w ttu strong-type mb4">Services</h1>
     <p class="colour-w body-type w-80 f4 lh-copy mw7 tc">I offer a range of services aimed at enabling a positive birth experience and continuity of care in pregnancy, birth and beyond.</p>
-    <ul class="list ph2 ph0-ns body-type mb5">
+    <ul class="list ph2 ph4-m ph0-l body-type mb5">
         <li class="mv3 bgc-dark-soft pv3 ph4 br2">
             @include('svgicons.heart', ['classes' => 'db center mb2'])
             <p class="tc f3 b ma0 colour-w">Antenatal classes</p>
