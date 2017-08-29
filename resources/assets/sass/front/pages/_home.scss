@@ -1,13 +1,14 @@
 .home-banner {
   background-image: url(./images/banner.jpg);
-  background-size: cover;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-position-x: 100%;
 
   @include respond-to(small) {
     background-image: url(./images/banner_mobile.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
     background-position-y: 60px;
-    background-position-x: -230%;
+    background-position-x: 100%;
   }
 }
 

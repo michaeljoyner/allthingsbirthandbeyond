@@ -14,7 +14,7 @@
 
 @section('content')
     <h2 class="f2 f1-ns colour-p strong-type tc mv5 ttu">Get In Touch</h2>
-    <p class="mv4 colour-p b f5 f4-ns tc ph3 body-type">Send us a message to set up a free appointment now.</p>
+    <p class="mv4 colour-p b f5 f4-ns tc ph3 body-type">Send me a message to set up a free appointment now.</p>
     <form action="/contact" method="POST" class="w-90 mw6 center">
         {!! csrf_field() !!}
         <div class="{{ $errors->has('name') ? ' has-error' : '' }} mv3">
@@ -49,6 +49,6 @@
             <button type="submit" class="ph4 pv2 ba br3 bw2 colour-p f4 f3-ns hov-s strong-type ttu bgc-white bdc-p">Send Message</button>
         </div>
     </form>
-    <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">Alternatively, please feel free to email</p>
+    <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">Alternatively, please email me at:</p>
     <p class="mt4 mb5 colour-p f5 f4-ns tc ph3 body-type">hello@allthingsbirthandbeyond.co.uk</p>
 @endsection

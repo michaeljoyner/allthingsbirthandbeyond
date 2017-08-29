@@ -8,6 +8,12 @@
         </div>
         <p class="body-type colour-w f5">hello@allthingsbirthandbeyond.co.uk</p>
         <p class="body-type colour-w f5">Tel: 05 76692 883</p>
+        <p class="body-type colour-w f5 mt4">Company Information</p>
+        <p class="body-type colour-w f6">Registered Head Office</p>
+        <p class="body-type colour-w f6">47 St Aelreds Mews, York, England, YO31 ORW</p>
+        <p class="body-type colour-w f6">Registered in England and Wales</p>
+        <p class="body-type colour-w f6">Registration number: 10901143</p>
+
     </div>
     <div class="dn pr5 tr flex-ns flex-column justify-center items-center">
         <img src="/images/logos/logo_full_white.svg" width="400" alt="Birth and Beyond Logo" class="o-10">

@@ -1,7 +1,7 @@
 <section class="db flex-ns">
     <div class="w-100 w-50-ns pt4">
         <h2 class="mb5 f2 f1-ns tc colour-p ttu strong-type">Did You Know?</h2>
-        <p class="body-type colour-p f4 tc mb4 b">It has been shown that women supported by a doula had: </p>
+        <p class="body-type colour-p f4 tc mb4 b">Doula involvement in pregnancy, birth and beyond has had these positive outcomes:</p>
         <ul class="list pl0">
             <li class="tc mb3 mb4-ns">
                 <p class="strong-type f4 f3-ns mv2 colour-p">34%</p>
