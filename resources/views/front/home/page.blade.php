@@ -8,7 +8,7 @@
     @include('front.partials.ogmeta', [
         'ogImage' => '/images/facebook.jpg',
         'ogTitle' => 'All Things Birth & Beyond',
-        'ogDescription' => ''
+        'ogDescription' => 'I am a certified and professional doula who works to provide information and support for all things birth and beyond.'
     ])
 @endsection
 

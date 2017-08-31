@@ -7,8 +7,8 @@
 @section('head')
     @include('front.partials.ogmeta', [
         'ogImage' => '/images/facebook.jpg',
-        'ogTitle' => 'About Me - All Things Birth & Beyond',
-        'ogDescription' => ''
+        'ogTitle' => 'My Story - All Things Birth & Beyond',
+        'ogDescription' => 'Hi, I am Mel: a mom, qualified nurse and practicing doula. I\'d love to provide support and information for anything related to birth and beyond.'
     ])
 @endsection
 

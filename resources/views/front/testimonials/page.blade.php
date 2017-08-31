@@ -8,7 +8,7 @@
     @include('front.partials.ogmeta', [
         'ogImage' => '/images/facebook.jpg',
         'ogTitle' => 'Testimonials - All Things Birth & Beyond',
-        'ogDescription' => ''
+        'ogDescription' => 'It is an honour to share in the precious time of preparing for birth and parenthood with parents. Thank you to my valued clients for sharing your thoughts on my involvement in your preparation for all things birth and beyond!'
     ])
 @endsection
 

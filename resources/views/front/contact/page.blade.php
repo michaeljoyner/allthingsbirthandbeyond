@@ -8,7 +8,7 @@
     @include('front.partials.ogmeta', [
         'ogImage' => '/images/facebook.jpg',
         'ogTitle' => 'Contact Us - All Things Birth & Beyond',
-        'ogDescription' => ''
+        'ogDescription' => 'Get in touch if you have any questions or needs relating to all things birth and beyond.'
     ])
 @endsection
 
