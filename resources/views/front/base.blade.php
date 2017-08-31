@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ mix('css/fapp.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="google-site-verification" content="YPEZBzl7lq8D_p6SQmvzC5Jcd1OigYZVPHULEI2PnAQ" />
     @yield('head')
 </head>
 <body  class="{{ $pageName ?? '' }}">
