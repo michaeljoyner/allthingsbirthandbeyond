@@ -2,9 +2,9 @@
     <div class="pl3 pl5-ns">
         <h4 class="colour-w strong-type ttu f2 mv0">Connect</h4>
         <div class="mt3">
-            <a class="mr2" href="#">@include('svgicons.facebook', ['classes' => 'icon hov-s'])</a>
-            <a class="mr2" href="#">@include('svgicons.instagram', ['classes' => 'icon hov-s'])</a>
-            <a class="mr2" href="#">@include('svgicons.linkedin', ['classes' => 'icon hov-s'])</a>
+            <a target="_blank" class="mr2" href="https://www.facebook.com/york.doula.mel/?ref=bookmarks">@include('svgicons.facebook', ['classes' => 'icon hov-s'])</a>
+            <a target="_blank" class="mr2" href="https://www.instagram.com/all.things.birth.and.beyond/?hl=en">@include('svgicons.instagram', ['classes' => 'icon hov-s'])</a>
+            <a target="_blank" class="mr2" href="https://www.linkedin.com/in/melody-robinson-a7266a14a/">@include('svgicons.linkedin', ['classes' => 'icon hov-s'])</a>
         </div>
         <p class="body-type colour-w f5">hello@allthingsbirthandbeyond.co.uk</p>
         <p class="body-type colour-w f5 mt4 mb2">Company Information</p>
