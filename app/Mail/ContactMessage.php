@@ -32,6 +32,10 @@ class ContactMessage extends Mailable
      */
     public function build()
     {
-        return $this->subject('New Site message from ' . $this->name)->markdown('emails.contact');
+        return $this->subject('New Site message from ' . $this->name)
+            ->from([
+                'address' => $this->email === 'Not provided' ? 'noreply@allthingsbirthandbeyond.co.uk': $this->email,
+                'name' => $this->name
+            ])->markdown('emails.contact');
     }
 }
