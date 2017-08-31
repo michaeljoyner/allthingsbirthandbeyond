@@ -7,7 +7,6 @@
             <a class="mr2" href="#">@include('svgicons.linkedin', ['classes' => 'icon hov-s'])</a>
         </div>
         <p class="body-type colour-w f5">hello@allthingsbirthandbeyond.co.uk</p>
-        <p class="body-type colour-w f5">Tel: 05 76692 883</p>
         <p class="body-type colour-w f5 mt4 mb2">Company Information</p>
         <p class="body-type colour-w mv1 f6">Registered Head Office</p>
         <p class="body-type colour-w mv1 f6">47 St Aelreds Mews, York, England, YO31 ORW</p>
