@@ -22,7 +22,7 @@ class ContactController extends Controller
             'phone' => 'required_without:email'
         ]);
 
-        Mail::to('joyner.michael@gmail.com')->send(new ContactMessage(request()->only(['name', 'email', 'phone', 'enquiry'])));
+        Mail::to('hello@allthingsbirthandbeyond.co.uk')->send(new ContactMessage(request()->only(['name', 'email', 'phone', 'enquiry'])));
         return redirect('/thanks')->with(['sender' => request('name')]);
     }
 }
