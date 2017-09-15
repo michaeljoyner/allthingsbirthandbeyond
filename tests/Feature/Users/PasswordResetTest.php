@@ -18,8 +18,8 @@ class PasswordResetTest extends TestCase
      */
     public function a_logged_in_user_may_reset_their_own_password()
     {
-        $this->disableExceptionHandling();
-        $user = factory(User::class)->create(['email' => 'joe@example.com', 'password' => 'password']);
+//        $this->disableExceptionHandling();
+        $user = factory(User::class)->create(['email' => 'joe@example.com', 'password' => bcrypt('password')]);
 
         $response = $this->actingAs($user)->post('/admin/users/passwords', [
             'old_password' => 'password',

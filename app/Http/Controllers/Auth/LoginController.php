@@ -27,6 +27,11 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/admin';
 
+    public function showLoginForm()
+    {
+        return view('admin.auth.login');
+    }
+
 
     public function __construct()
     {

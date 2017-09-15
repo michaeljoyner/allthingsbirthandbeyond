@@ -2,12 +2,13 @@
 
 namespace App;
 
+use Dymantic\Articles\AuthorsArticles;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, AuthorsArticles;
 
     /**
      * The attributes that are mass assignable.
@@ -15,7 +16,10 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'superadmin'
+        'name',
+        'email',
+        'password',
+        'superadmin'
     ];
 
     /**
@@ -24,15 +28,16 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password',
+        'remember_token',
     ];
 
     protected $casts = ['superadmin' => 'boolean'];
 
-    public function setPasswordAttribute($password)
-    {
-        $this->attributes['password'] = bcrypt($password);
-    }
+//    public function setPasswordAttribute($password)
+//    {
+//        $this->attributes['password'] = bcrypt($password);
+//    }
 
     public function isSuperadmin()
     {
@@ -41,7 +46,8 @@ class User extends Authenticatable
 
     public function resetPassword($password)
     {
-        $this->password = $password;
+        $this->password = bcrypt($password);
+
         return $this->save();
     }
 }

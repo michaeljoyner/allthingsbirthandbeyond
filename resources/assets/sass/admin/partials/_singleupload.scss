@@ -1,11 +1,15 @@
 .single-image-uploader-box {
 
+  .inner-box {
+    margin-top: 15px;
+  }
+
   .profile-image {
     width: 200px;
     height: 200px;
     margin: 0 auto;
     display: block;
-    border: 6px solid dodgerblue;
+    border: 2px solid $site_secondary;
     max-width: 100%;
 
     &.processing {

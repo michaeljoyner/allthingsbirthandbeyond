@@ -18,7 +18,7 @@ class AuthenticationTest extends TestCase
      */
     public function an_existing_user_may_log_in()
     {
-        $user = factory(User::class)->create(['password' => 'password']);
+        $user = factory(User::class)->create(['password' => bcrypt('password')]);
 
         $this->assertFalse(Auth::check());
 
@@ -26,7 +26,6 @@ class AuthenticationTest extends TestCase
             'email' => $user->email,
             'password' => 'password'
         ]);
-
         $response->assertSessionMissing('errors');
         $response->assertRedirect('/admin');
         $this->assertTrue(Auth::check());

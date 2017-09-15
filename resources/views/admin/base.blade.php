@@ -2,19 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1 shrink-to-fit=no">
     @section('title')
-        <title>Good Gifts for Guys | Admin</title>
+        <title>All Things Birth &amp; Beyond | Admin</title>
     @show
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}"/>
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300'
+          rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet"
+          href="{{ mix('css/app.css') }}"/>
+    <meta id="csrf-token-meta"
+          name="csrf-token"
+          content="{{ csrf_token() }}">
+    <META NAME="ROBOTS"
+          CONTENT="NOINDEX, NOFOLLOW">
     @yield('head')
     {{--<script>--}}
-        {{--var Laravel = {--}}
-            {{--csrfToken: '{{ csrf_token() }}'--}}
-        {{--}--}}
+    {{--var Laravel = {--}}
+    {{--csrfToken: '{{ csrf_token() }}'--}}
+    {{--}--}}
     {{--</script>--}}
 </head>
 <body>
@@ -23,7 +30,8 @@
 @else
     @include('admin.partials.fakenavbar')
 @endif
-<div class="container" id="app">
+<div class="container"
+     id="app">
     @yield('content')
 </div>
 {{--<div class="main-footer"></div>--}}

@@ -3,6 +3,7 @@
 namespace Tests;
 
 use App\Exceptions\Handler;
+use App\User;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
@@ -25,5 +26,14 @@ abstract class TestCase extends BaseTestCase
             }
 
         });
+    }
+
+    public function asLoggedInUser($superadmin = true)
+    {
+        $user = factory(User::class)->create(['superadmin' => $superadmin]);
+
+        $this->actingAs($user);
+
+        return $this;
     }
 }

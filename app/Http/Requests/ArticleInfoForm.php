@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class ArticleInfoForm extends FormRequest
+{
+
+    public function authorize()
+    {
+        return true;
+    }
+
+
+    public function rules()
+    {
+        return [
+            'title' => 'required'
+        ];
+    }
+
+    public function requiredFields()
+    {
+        return $this->only(['title', 'intro', 'description']);
+    }
+}
