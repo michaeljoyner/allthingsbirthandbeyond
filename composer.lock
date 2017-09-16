@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d863d7935dd1fd13a46be4a6f13b9cac",
-    "content-hash": "74a88ba37de916ec5b26c3c51f844c19",
+    "hash": "eb20e238fc0970d7ba462389e89eb33c",
+    "content-hash": "e756b422603526b607014b2227da8363",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -369,16 +369,16 @@
         },
         {
             "name": "dymantic/articles",
-            "version": "v0.1.5",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dymantic/articles.git",
-                "reference": "fbcdfffad3a8e94443eaa077f2d8dd400f2229a8"
+                "reference": "60cf7d946fc262e5ef1ae33219c4ad34ef50d8ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dymantic/articles/zipball/fbcdfffad3a8e94443eaa077f2d8dd400f2229a8",
-                "reference": "fbcdfffad3a8e94443eaa077f2d8dd400f2229a8",
+                "url": "https://api.github.com/repos/Dymantic/articles/zipball/60cf7d946fc262e5ef1ae33219c4ad34ef50d8ae",
+                "reference": "60cf7d946fc262e5ef1ae33219c4ad34ef50d8ae",
                 "shasum": ""
             },
             "require": {
@@ -417,7 +417,7 @@
                 }
             ],
             "description": "Laravel article model and associated stuff for reuse in our projects",
-            "time": "2017-09-12 03:52:28"
+            "time": "2017-09-16 09:56:57"
         },
         {
             "name": "egulias/email-validator",
