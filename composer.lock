@@ -369,16 +369,16 @@
         },
         {
             "name": "dymantic/articles",
-            "version": "v0.2.2",
+            "version": "v0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dymantic/articles.git",
-                "reference": "60cf7d946fc262e5ef1ae33219c4ad34ef50d8ae"
+                "reference": "09674c1833b9d131bf40b4729e3c2759a1120ab7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dymantic/articles/zipball/60cf7d946fc262e5ef1ae33219c4ad34ef50d8ae",
-                "reference": "60cf7d946fc262e5ef1ae33219c4ad34ef50d8ae",
+                "url": "https://api.github.com/repos/Dymantic/articles/zipball/09674c1833b9d131bf40b4729e3c2759a1120ab7",
+                "reference": "09674c1833b9d131bf40b4729e3c2759a1120ab7",
                 "shasum": ""
             },
             "require": {
@@ -417,7 +417,7 @@
                 }
             ],
             "description": "Laravel article model and associated stuff for reuse in our projects",
-            "time": "2017-09-16 09:56:57"
+            "time": "2017-09-20 12:24:43"
         },
         {
             "name": "egulias/email-validator",

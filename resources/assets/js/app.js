@@ -28,6 +28,7 @@ Vue.component('delete-modal', require('./components/DeleteModal.vue'));
 Vue.component('testimonial-form', require('./components/TestimonialForm.vue'));
 Vue.component('testimonials-list', require('./components/TestimonialsList.vue'));
 Vue.component('testimonial', require('./components/Testimonial.vue'));
+Vue.component('toggle-switch', require('./components/Toggle.vue'));
 
 window.eventHub = new Vue();
 window.swal = require('sweetalert');

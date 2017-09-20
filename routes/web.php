@@ -11,25 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('front.home.page');
-});
+Route::get('/', 'PagesController@home');
+Route::get('about', 'PagesController@about');
+Route::get('testimonials', 'PagesController@testimonials');
+Route::get('thanks', 'PagesController@thanks');
 
-Route::get('about', function () {
-    return view('front.about.page');
-});
-
-Route::get('testimonials', function () {
-    return view('front.testimonials.page');
-});
-
-Route::get('testimonials', function () {
-    return view('front.testimonials.page');
-});
-
-Route::get('thanks', function () {
-    return view('front.thanks');
-});
+Route::get('blog', 'BlogController@index');
+Route::get('blog/{slug}', 'BlogController@show');
 
 Route::get('contact', 'ContactController@show');
 Route::post('contact', 'ContactController@store');

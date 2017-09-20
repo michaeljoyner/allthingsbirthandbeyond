@@ -12,6 +12,13 @@
         </div>
         <div class="detail-box">
             <div class="testimonial-actions">
+                <toggle-switch on-url="/admin/published-testimonials"
+                               :off-url="`/admin/published-testimonials/${itemAttributes.id}`"
+                               :on-payload="{testimonial_id: itemAttributes.id}"
+                               :unique="itemAttributes.id"
+                               label-text="Publish"
+                               :toggle-state="itemAttributes.published"
+                ></toggle-switch>
                 <testimonial-form :url="`/admin/testimonials/${itemAttributes.id}`"
                                   form-type="update"
                                   button-text="Edit"

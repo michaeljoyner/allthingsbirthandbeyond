@@ -35,7 +35,7 @@
                                :url="`/admin/articles/${articleAttributes.id}/title-images`"
                                size="preview"
                                :preview-width="400"
-                               :preview-height="300"
+                               :preview-height="200"
                                :unique="articleAttributes.id"
                                delete-url="`/admin/articles/${articleAttributes.id}/title-images`"
                 ></single-upload>

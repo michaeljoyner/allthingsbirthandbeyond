@@ -9,8 +9,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/admin">
-                <img src="{{ asset('images/logos/uptowner_logo@2x.png') }}" alt="logo" width="70px"/>
+            <a class="navbar-brand" href="/admin" style="padding-top: 4px;">
+                <img src="{{ asset('images/logos/logo_icon.svg') }}" alt="logo" height="40px"/>
             </a>
         </div>
         </div><!-- /.navbar-collapse -->

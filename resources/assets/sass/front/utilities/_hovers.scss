@@ -4,6 +4,12 @@
   }
 }
 
+.hover-soft-bg {
+  &:hover {
+    background-color: lighten($site_muted, 2%);
+  }
+}
+
 button.hov-s {
   &:hover {
     border-color: $site_secondary;

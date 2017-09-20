@@ -3,18 +3,27 @@
 <template>
     <div class="article-publisher-component">
         <p class="alert">STATUS:<br>{{ publish_status }}</p>
-        <label for="publish-date-input">Publish Date: </label>
-        <date-picker name="publish_date" v-model="publish_date" :clear-button="true"></date-picker>
 
-        <button class="dd-btn btn" :disabled="saving" @click="update">
+        <button class="dd-btn btn"
+                :disabled="saving"
+                @click="update">
             <span v-show="!saving">{{ publish ? 'Retract' : 'Publish' }}</span>
-            <div class="spinner" v-show=saving>
+            <div class="spinner"
+                 v-show=saving>
                 <div class="bounce1"></div>
                 <div class="bounce2"></div>
                 <div class="bounce3"></div>
             </div>
-
         </button>
+        <div v-show="!publish">
+            <label for="publish-date-input">Publish Date: </label>
+            <date-picker :disabled-picker="publish"
+                         name="publish_date"
+                         v-model="publish_date"
+                         :clear-button="true"
+            ></date-picker>
+        </div>
+
     </div>
 </template>
 
@@ -86,22 +95,22 @@
             },
 
             retract() {
-              axios.delete(`/admin/published-articles/${this.articleId}`)
-                  .then(() => this.publish = false)
-                  .catch(err => console.log(err))
-                  .then(() => this.saving = false);
+                axios.delete(`/admin/published-articles/${this.articleId}`)
+                    .then(() => this.publish = false)
+                    .catch(err => console.log(err))
+                    .then(() => this.saving = false);
             },
 
             publishData() {
                 if (moment(this.publish_date).isAfter(moment().endOf('day'))) {
                     return {
-                        id: this.articleId,
+                        article_id: this.articleId,
                         publish_date: this.publish_date
                     };
                 }
 
                 return {
-                    id: this.articleId
+                    article_id: this.articleId
                 };
             },
         }
