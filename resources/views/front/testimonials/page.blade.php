@@ -45,7 +45,7 @@
     </article>
     <article class="fade-in-up an-del6 mv4 w-90 mw8 center pa4 bgc-light body-type">
         <p class="colour-p f5 f4-ns lh-copy mt0">I truly believe [Mel] played a massive part in helping me have one of the most amazing experiences of my life.  It was just incredible and I don’t think that would have been possible without you.  Your work is amazing – THANK YOU!!</p>
-        <p class="colour-p f5 f4-ns lh-copy i tr mb0">&mdash; CF</p>
+        <p class="colour-p f5 f4-ns lh-copy i tr mb0">&mdash; Chloe Fletcher</p>
     </article>
     <article class="fade-in-up an-del7 mv4 w-90 mw8 center pa4 bgc-light body-type">
         <p class="colour-p f5 f4-ns lh-copy mt0">We highly recommend Melody. She is an incredible doula who genuinely cares for others and wants to help families to have their wishes for their pregnancy and birth become a reality.</p>
