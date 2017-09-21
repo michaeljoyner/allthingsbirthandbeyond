@@ -34,10 +34,6 @@ class User extends Authenticatable
 
     protected $casts = ['superadmin' => 'boolean'];
 
-//    public function setPasswordAttribute($password)
-//    {
-//        $this->attributes['password'] = bcrypt($password);
-//    }
 
     public function isSuperadmin()
     {
