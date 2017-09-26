@@ -25,7 +25,7 @@
         <ul>
             <li>Testimonials will appear on the site in the reverse order of which they were added (i.e. latest first).</li>
             <li>Testimonials will only show if they are published.</li>
-            <li>An image is not required for a testimonial, and we recommend using them sparingly.</li>
+            <li>An image is not required for a testimonial, and we recommend using them sparingly, if at all.</li>
             <li>The image used will be cropped to a 4:3 aspect ratio if not so already.</li>
             <li>If you want to change the testimonial on the home page, just tell us and we'll update it.</li>
         </ul>
