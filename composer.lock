@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eb20e238fc0970d7ba462389e89eb33c",
-    "content-hash": "e756b422603526b607014b2227da8363",
+    "hash": "134145258c24c828e3129057385db343",
+    "content-hash": "a5b3b49e9d2910cf49b6750ecad00cb5",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1241,6 +1241,44 @@
                 "processing"
             ],
             "time": "2017-05-09 17:41:49"
+        },
+        {
+            "name": "michaeljoyner/simple-json-endpoint",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michaeljoyner/simple-json-endpoint.git",
+                "reference": "5f7a0439f3bd78502f956586e0c38310ecc31fad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michaeljoyner/simple-json-endpoint/zipball/5f7a0439f3bd78502f956586e0c38310ecc31fad",
+                "reference": "5f7a0439f3bd78502f956586e0c38310ecc31fad",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "michaeljoyner\\SimpleJsonEndpoint\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Michael Joyner",
+                    "email": "joyner.michael@gmail.com"
+                }
+            ],
+            "description": "If you just want to get some JSON from an endpoint and also possibly cache it, this makes life easier. Example use cases include fetching instagram feed, weather data, exchange rates, etc. You just need to worry about how you deal with the data.",
+            "time": "2017-08-30 13:33:34"
         },
         {
             "name": "monolog/monolog",

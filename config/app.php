@@ -168,6 +168,7 @@ return [
          */
         Laravel\Tinker\TinkerServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
+        michaeljoyner\SimpleJsonEndpoint\Providers\SimpleJsonEndpointServiceProvider::class,
 
         /*
          * Application Service Providers...

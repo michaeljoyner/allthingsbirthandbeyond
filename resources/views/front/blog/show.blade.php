@@ -15,11 +15,11 @@
 @section('content')
     <article class="mw7 center">
         <h2 class="f3 f2-ns colour-p strong-type ph2 tc mt5 mb2 ttu">{{ $article->title }}</h2>
-        <p class="colour-s tc body-type mb5">{{ $article->published_on->toFormattedDateString() }}</p>
+        <p class="colour-s tc body-type mb5">{{ $article->published_on ? $article->published_on->toFormattedDateString() : 'Not published' }}</p>
         <img src="{{ $article->titleImage('large_tile') }}"
              alt="{{ $article->title }}">
         <div class="article-body mv4 body-type ph2 mw7 center lh-copy f4-ns">
-            {{ $article->body }}
+            {!! $article->body !!}
         </div>
     </article>
     <div class="social-buttons tc mv4">

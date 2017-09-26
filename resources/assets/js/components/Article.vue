@@ -5,6 +5,7 @@
         <div class="dd-page-header">
             <h1 class="page-title">{{ title }}</h1>
             <div class="page-header-actions">
+                <a :href="`/admin/preview/articles/${articleAttributes.id}`" class="btn dd-btn">Preview</a>
                 <article-form :url="`/admin/articles/${articleAttributes.id}`"
                               button-text="Edit Info"
                               :formAttributes="articleAttributes"

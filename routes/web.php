@@ -52,6 +52,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
     Route::group(['middleware' => 'auth'], function() {
         Route::get('/', 'DashboardController@dashboard');
 
+        Route::get('preview/articles/{articles}', 'ArticlePreviewController@show');
+
         Route::get('users', 'UsersController@index');
         Route::delete('users/{user}', 'UsersController@delete')->middleware('superadmin');
 
