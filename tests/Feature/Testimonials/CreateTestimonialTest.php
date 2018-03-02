@@ -21,7 +21,7 @@ class CreateTestimonialTest extends TestCase
         ];
 
         $response = $this->asLoggedInUser()->json('POST', '/admin/testimonials', $testimonial_data);
-        $response->assertStatus(200);
+        $response->assertStatus(201);
 
         $this->assertDatabaseHas('testimonials', $testimonial_data);
     }
