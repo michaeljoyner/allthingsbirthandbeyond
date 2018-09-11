@@ -42,7 +42,7 @@ class PasswordResetTest extends TestCase
      */
     public function a_user_needs_their_password_to_reset_to_a_new_one()
     {
-        $user = factory(User::class)->create(['email' => 'joe@example.com', 'password' => 'password']);
+        $user = factory(User::class)->create(['email' => 'joe@example.com', 'password' => bcrypt('password')]);
         $original_password = $user->password;
 
         $response = $this->actingAs($user)->post('/admin/users/passwords', [
