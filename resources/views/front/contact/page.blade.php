@@ -10,12 +10,13 @@
         'ogTitle' => 'Contact Us - All Things Birth & Beyond',
         'ogDescription' => 'Get in touch if you have any questions or needs relating to all things birth and beyond.'
     ])
+    <script src='https://www.google.com/recaptcha/api.js?render={{ config('services.google.recaptcha.key') }}'></script>
 @endsection
 
 @section('content')
     <h2 class="f2 f1-ns colour-p strong-type tc mv5 ttu">Get In Touch</h2>
     <p class="mv4 colour-p b f5 f4-ns tc ph3 body-type">Send me a message to set up a free initial consult.</p>
-    <form action="/contact" method="POST" class="w-90 mw6 center">
+    <form action="/contact" method="POST" class="w-90 mw6 center contact-form">
         {!! csrf_field() !!}
         <div class="{{ $errors->has('name') ? ' has-error' : '' }} mv3">
             <label class="body-type lh-copy f5" for="name">Name</label>
@@ -48,7 +49,28 @@
         <div class="mt4 mb5 tc">
             <button type="submit" class="ph4 pv2 ba br3 bw2 colour-p f4 f3-ns hov-s strong-type ttu bgc-white bdc-p">Send Message</button>
         </div>
+        <input type="hidden" name="recaptcha_token" id="recaptcha-token">
     </form>
     <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">Alternatively, please email me at:</p>
     <p class="mt4 mb5 colour-p f5 f4-ns tc ph3 body-type">hello@allthingsbirthandbeyond.co.uk</p>
+@endsection
+
+@section('bodyscripts')
+    <script>
+        const form = document.querySelector('.contact-form');
+        form.addEventListener('submit', (ev) => {
+            const btn = form.querySelector('button[type=submit]');
+            btn.innerHTML = 'SENDING...';
+            btn.classList.add('o-50');
+            btn.disabled = true;
+            ev.preventDefault();
+            grecaptcha.execute('{{ config('services.google.recaptcha.key') }}', {action: 'contact_form'})
+                      .then(function(token) {
+                          console.log({token});
+                            document.querySelector('#recaptcha-token').value = token;
+                            form.submit();
+                      });
+            return false;
+        });
+    </script>
 @endsection
