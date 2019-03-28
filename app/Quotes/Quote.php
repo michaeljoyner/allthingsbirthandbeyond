@@ -8,7 +8,9 @@ class Quote extends SimpleJsonEndpoint
 {
     protected $cache_key = 'daily_quote';
 
-    protected function getEndpointUrl(array $options)
+    protected $cache_minutes = 86400;
+
+    protected function getEndpointUrl(array $options = [])
     {
         return 'http://quotes.rest/qod.json?category=inspire';
     }
