@@ -5,6 +5,7 @@
             <a target="_blank" class="mr2" href="https://www.facebook.com/allthingsbirthandbeyond">@include('svgicons.facebook', ['classes' => 'icon hov-s'])</a>
             <a target="_blank" class="mr2" href="https://www.instagram.com/all.things.birth.and.beyond/?hl=en">@include('svgicons.instagram', ['classes' => 'icon hov-s'])</a>
             <a target="_blank" class="mr2" href="https://www.linkedin.com/in/melody-robinson-a7266a14a/">@include('svgicons.linkedin', ['classes' => 'icon hov-s'])</a>
+            <a target="_blank" class="mr2" href="https://twitter.com/Nurturing_You">@include('svgicons.twitter_new', ['classes' => 'icon hov-s'])</a>
         </div>
         <p class="body-type colour-w f5">hello@allthingsbirthandbeyond.co.uk</p>
         <p class="body-type colour-w f5 mt4 mb2">Company Information</p>

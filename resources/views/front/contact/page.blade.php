@@ -53,6 +53,12 @@
     </form>
     <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">Alternatively, please email me at:</p>
     <p class="mt4 mb5 colour-p f5 f4-ns tc ph3 body-type">hello@allthingsbirthandbeyond.co.uk</p>
+
+    <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">or</p>
+    <div class="tc mb4">
+        @include('front.partials.booking-button')
+    </div>
+
 @endsection
 
 @section('bodyscripts')
