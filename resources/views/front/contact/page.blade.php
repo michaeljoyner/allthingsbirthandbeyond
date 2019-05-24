@@ -51,11 +51,11 @@
         </div>
         <input type="hidden" name="recaptcha_token" id="recaptcha-token">
     </form>
-    <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">Alternatively, please email me at:</p>
-    <p class="mt4 mb5 colour-p f5 f4-ns tc ph3 body-type">hello@allthingsbirthandbeyond.co.uk</p>
+    <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">or</p>
+    <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b tc">Call on <a href="tel:+441904238471" class="colour-p hov-s">+441904238471</a></p>
 
     <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">or</p>
-    <div class="tc mb4">
+    <div class="tc mb6">
         @include('front.partials.booking-button')
     </div>
 
