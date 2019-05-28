@@ -8,6 +8,7 @@
         <a class="ph4 f3 link ttu colour-p hov-s @activeclass('about')" href="/about">About</a>
         {{--<a class="ph4 f3 link ttu colour-p hov-s @activeclass('blog')" href="/blog">Blog</a>--}}
         <a class="ph4 f3 link ttu colour-p hov-s @activeclass('testimonials')" href="/testimonials">Testimonials</a>
+        <a class="ph4 f3 link ttu colour-p hov-s @activeclass('blog')" href="/blog">Blog</a>
         <a class="ph4 f3 link ttu colour-p hov-s @activeclass('contact')" href="/contact">Contact</a>
         <label class="dn-ns ph4 f3 link ttu colour-p" for="nav-trigger">Close</label>
     </nav>
