@@ -19,3 +19,4 @@ npm-debug.log
 /public/sitemap.xml
 .DS_Store
 .smithy.yaml
+yarn.lock
