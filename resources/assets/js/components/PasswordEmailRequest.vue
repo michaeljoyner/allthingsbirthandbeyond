@@ -1,5 +1,3 @@
-<style></style>
-
 <template>
     <div class="password-email-request-component">
         <div class="notification-box">

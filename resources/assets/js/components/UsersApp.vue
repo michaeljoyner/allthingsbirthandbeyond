@@ -1,16 +1,14 @@
-<style></style>
-
 <template>
     <div class="user-app-component">
-        <div class="user-card" v-for="user in users">
-            <div class="user-card-details">
-                <span class="initial">{{ user.name[0] }}</span>
-                <div class="user-name-and-email">
-                    <p class="user-card-name">{{ user.name }}</p>
-                    <p class="user-card-email">{{ user.email }}</p>
+        <div class="flex items-center justify-between shadow my-8 p-4" v-for="user in users">
+            <div class="">
+                <div class="">
+                    <p class="capitalize text-lg font-bold mb-2">{{ user.name }}</p>
+                    <p class="text-gray-600">{{ user.email }}</p>
+                    <span class="text-sm text-gray-600 user-card-status">{{ user.superadmin ? 'Superadmin' : 'Regular' }}</span>
                 </div>
             </div>
-            <span class="user-card-status">{{ user.superadmin ? 'Superadmin' : 'Regular' }}</span>
+
             <span>
                 <delete-button :delete-url="`/admin/users/${user.id}`"
                                v-on:item-deleted="removeUser(user)"></delete-button>

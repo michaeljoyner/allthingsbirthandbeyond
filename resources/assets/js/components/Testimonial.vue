@@ -1,6 +1,6 @@
 <template>
     <div class="testimonial-component card">
-        <div class="image-box single-image-uploader-box">
+        <div class="w-64 flex-shrink-0 single-image-uploader-box">
             <single-upload :default="itemAttributes.thumb_img"
                            :url="`/admin/testimonials/${itemAttributes.id}/image`"
                            size="preview"
@@ -8,33 +8,40 @@
                            :preview-height="225"
                            :unique="itemAttributes.id"
                            :delete-url="`/admin/testimonials/${itemAttributes.id}/image`"
-            ></single-upload>
+            />
         </div>
-        <div class="detail-box">
-            <div class="testimonial-actions">
-                <toggle-switch on-url="/admin/published-testimonials"
-                               :off-url="`/admin/published-testimonials/${itemAttributes.id}`"
-                               :on-payload="{testimonial_id: itemAttributes.id}"
-                               :unique="itemAttributes.id"
-                               label-text="Publish"
-                               :toggle-state="itemAttributes.published"
-                ></toggle-switch>
-                <testimonial-form :url="`/admin/testimonials/${itemAttributes.id}`"
-                                  form-type="update"
-                                  button-text="Edit"
-                                  :form-attributes="itemAttributes"
-                                  @updated-testimonial="updateData"
-                ></testimonial-form>
-                <delete-modal :url="`/admin/testimonials/${itemAttributes.id}`"
-                              :redirect="false"
-                              :item-name="itemAttributes.client"
-                              @item-deleted="removeTestimonial"
-                ></delete-modal>
+        <div class="flex-1 p-8">
+            <p class="text-purple text-sm uppercase">Client</p>
+            <p class="text-lg font-bold">{{ client }}</p>
+            <p class="text-purple text-sm uppercase">Testimonial</p>
+            <p class="mt-4">{{ body }}</p>
+            <div class="mt-8">
+                <div class="flex justify-between items-center">
+                    <toggle-switch on-url="/admin/published-testimonials"
+                                   :off-url="`/admin/published-testimonials/${itemAttributes.id}`"
+                                   :on-payload="{testimonial_id: itemAttributes.id}"
+                                   :unique="itemAttributes.id"
+                                   label-text="Publish"
+                                   :toggle-state="itemAttributes.published"
+                    />
+                    <div>
+                        <testimonial-form :url="`/admin/testimonials/${itemAttributes.id}`"
+                                          form-type="update"
+                                          button-text="Edit"
+                                          :form-attributes="itemAttributes"
+                                          @updated-testimonial="updateData"
+                        />
+                        <delete-modal :url="`/admin/testimonials/${itemAttributes.id}`"
+                                      :redirect="false"
+                                      :item-name="itemAttributes.client"
+                                      @item-deleted="removeTestimonial"
+                        />
+                    </div>
+                </div>
+
+
             </div>
-            <p class="label">Client</p>
-            <p>{{ client }}</p>
-            <p class="label">Testimonial</p>
-            <p>{{ body }}</p>
+
         </div>
     </div>
 </template>
@@ -73,7 +80,7 @@
     }
 </script>
 
-<style scoped lang="scss" type="text/scss">
+<style scoped lang="less">
     .testimonial-component {
         display: flex;
         align-items: stretch;

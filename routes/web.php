@@ -16,6 +16,9 @@ Route::get('about', 'PagesController@about');
 Route::get('testimonials', 'PagesController@testimonials');
 Route::get('thanks', 'PagesController@thanks');
 
+Route::get('services', 'ServicesController@index');
+Route::get('services/{service}', 'ServicesController@show');
+
 Route::get('blog', 'BlogController@index');
 Route::get('blog/{slug}', 'BlogController@show');
 

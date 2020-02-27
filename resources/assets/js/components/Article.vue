@@ -1,23 +1,25 @@
-<style></style>
-
 <template>
     <div class="article-page-component">
         <div class="dd-page-header">
             <h1 class="page-title">{{ title }}</h1>
             <div class="page-header-actions">
-                <a :href="`/admin/preview/articles/${articleAttributes.id}`" class="btn dd-btn">Preview</a>
-                <article-form :url="`/admin/articles/${articleAttributes.id}`"
-                              button-text="Edit Info"
-                              :formAttributes="articleAttributes"
-                              form-type="update"
-                              @updated-article-info="updateFormInfo"
-                ></article-form>
-                <a :href="`/admin/articles/${articleAttributes.id}/body`" class="btn dd-btn">Edit Content</a>
-                <delete-modal :url="`/admin/articles/${articleAttributes.id}`"
-                              :redirect="true"
-                              :item-name="articleAttributes.title"
-                ></delete-modal>
+
             </div>
+        </div>
+
+        <div class="shadow p-8 flex justify-end items-center">
+            <a :href="`/admin/preview/articles/${articleAttributes.id}`" class="btn dd-btn mx-4">Preview</a>
+            <article-form :url="`/admin/articles/${articleAttributes.id}`"
+                          button-text="Edit Info"
+                          :formAttributes="articleAttributes"
+                          form-type="update"
+                          @updated-article-info="updateFormInfo"
+            ></article-form>
+            <a :href="`/admin/articles/${articleAttributes.id}/body`" class="btn dd-btn mx-4">Edit Content</a>
+            <delete-modal :url="`/admin/articles/${articleAttributes.id}`"
+                          :redirect="true"
+                          :item-name="articleAttributes.title"
+            ></delete-modal>
         </div>
         <section>
             <div class="card labeled-text">

@@ -13,20 +13,23 @@
 @endsection
 
 @section('content')
-    <article class="mw7 center">
-        <h2 class="f3 f2-ns colour-p strong-type ph2 tc mt5 mb2 ttu">{{ $article->title }}</h2>
-        <p class="colour-s tc body-type mb5">{{ $article->published_on ? $article->published_on->toFormattedDateString() : 'Not published' }}</p>
+    <section class="px-8 pt-40 pb-32">
+        <h1 class="type-h1 text-purple text-center">{{ $article->title }}</h1>
+        <p class="text-center text-purple type-b1 mb-20">{{ $article->published_on ? $article->published_on->toFormattedDateString() : 'Not published' }}</p>
         <img src="{{ $article->titleImage('large_tile') }}"
-             alt="{{ $article->title }}">
-        <div class="article-body mv4 body-type ph2 mw7 center lh-copy f4-ns">
+             alt="{{ $article->title }}" class="block mx-auto max-w-full mb-20">
+        <div class="max-w-2xl mx-auto type-b1">
             {!! $article->body !!}
         </div>
-    </article>
-    <div class="social-buttons tc mv4">
-        <p class="colour-p tc f4-ns strong-type">Share this article</p>
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::url()) }}"
-           class="mh2">@include('svgicons.facebook', ['classes' => 'icon icon-p hov-s'])</a>
-        <a href="https://twitter.com/home?status={{ urlencode($article->title . ' ' . Request::url()) }}"
-           class="mh2">@include('svgicons.twitter', ['classes' => 'icon icon-p hov-s'])</a>
+    </section>
+    <div class="my-12 text-center">
+        <p class="type-h2 text-center text-navy mb-6">Share this article</p>
+        <div class="flex justify-center">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::url()) }}"
+               class="mh2">@include('svgicons.facebook', ['classes' => 'text-teal-hard hover:text-teal-mid mx-4'])</a>
+            <a href="https://twitter.com/home?status={{ urlencode($article->title . ' ' . Request::url()) }}"
+               class="mh2">@include('svgicons.twitter', ['classes' => 'text-teal-hard hover:text-teal-mid mx-4'])</a>
+        </div>
+
     </div>
 @endsection

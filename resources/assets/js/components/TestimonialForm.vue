@@ -1,5 +1,3 @@
-<style></style>
-
 <template>
     <span class="testimonial-form-component">
         <button class="dd-btn btn" @click="modalOpen = true">{{ buttonText }}</button>
@@ -19,7 +17,7 @@
                         <label for="body">Testimonial</label>
                         <span class="error-message"
                               v-show="form.errors.body">{{ form.errors.body }}</span>
-                        <textarea name="body" v-model="form.data.body" class="form-control"></textarea>
+                        <textarea name="body" v-model="form.data.body" class="form-control h-48"></textarea>
                     </div>
                     <div class="modal-form-button-bar">
                         <button class="dd-btn btn btn-grey" type="button" @click="modalOpen = false">Cancel</button>

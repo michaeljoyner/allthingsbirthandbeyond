@@ -1,6 +1,7 @@
-import {throttle} from "lodash";
-import scrollThing from "./components/scrolledNavbar";
+window.addEventListener('load', () => {
+   const nav_trigger = document.querySelector('#nav-trigger');
 
-
-window.addEventListener('scroll', throttle(scrollThing.set.bind(scrollThing), 200));
-
+   nav_trigger.addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('show');
+   });
+});

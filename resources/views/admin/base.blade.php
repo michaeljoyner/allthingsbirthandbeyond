@@ -18,21 +18,20 @@
     <META NAME="ROBOTS"
           CONTENT="NOINDEX, NOFOLLOW">
     @yield('head')
-    {{--<script>--}}
-    {{--var Laravel = {--}}
-    {{--csrfToken: '{{ csrf_token() }}'--}}
-    {{--}--}}
-    {{--</script>--}}
+
 </head>
 <body>
-@if(Auth::check())
-    @include('admin.partials.navbar')
-@else
-    @include('admin.partials.fakenavbar')
-@endif
-<div class="container"
+
+<div class=""
      id="app">
-    @yield('content')
+    @auth
+        @include('admin.partials.navbar')
+    @else
+        @include('admin.partials.fakenavbar')
+    @endauth
+    <div class="max-w-4xl mx-auto px-6">
+        @yield('content')
+    </div>
 </div>
 {{--<div class="main-footer"></div>--}}
 <script src="{{ mix('js/app.js') }}"></script>

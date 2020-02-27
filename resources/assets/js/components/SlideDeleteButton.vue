@@ -1,5 +1,3 @@
-<style></style>
-
 <template>
     <span class="delete-button-component">
         <div class="delete-button-outer" :class="{'alerted': alert}">

@@ -1,5 +1,3 @@
-<style></style>
-
 <template>
     <span class="add-user-component">
         <button class="dd-btn btn" @click="modalOpen = true">Add User</button>

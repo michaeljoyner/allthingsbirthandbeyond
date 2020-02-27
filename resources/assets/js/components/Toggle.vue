@@ -67,9 +67,7 @@
 </script>
 
 <style scoped
-       lang="scss"
-       type="text/scss">
-    @import "~@/_variables.scss";
+       lang="less">
 
     .toggle-container {
         display: inline-block;
@@ -82,7 +80,7 @@
         &.off {
             .toggle-knob {
                 transform: translate3d(33px, 0, 0);
-                background-color: $mid_grey;
+                background-color: #b9b9b9;
             }
         }
 
@@ -93,7 +91,7 @@
             left: 0;
             right: 0;
             width: 100%;
-            background-color: $light_grey;
+            background-color: #d7d7d7;
             border-radius: 3px;
         }
 
@@ -105,7 +103,7 @@
             position: absolute;
             left: 0;
             top: -4px;
-            background-color: $site_primary;
+            background-color: mediumpurple;
             transform: translate3d(0, 0, 0);
         }
 

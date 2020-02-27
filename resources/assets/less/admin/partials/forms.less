@@ -1,0 +1,100 @@
+.dd-form {
+  padding: 0 15px;
+
+  label {
+    @apply text-purple;
+    text-transform: uppercase;
+    font-size: small;
+  }
+
+  input {
+    height: 32px;
+  }
+
+  input[type=text], input[type=email], input[type=password], textarea {
+    border-radius: 0;
+  }
+
+  textarea {
+    resize: none;
+    max-height: 120px;
+  }
+
+  .dd-tall-textbox {
+    height: 300px;
+  }
+
+  &.form-narrow {
+    display: block;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dd-checkbox-option {
+    label:after {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      @apply border border-gray-700 bg-white;
+      transition: .5s;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked + label {
+      &:after {
+        @apply bg-gray-700 border border-gray-700;
+      }
+    }
+  }
+}
+
+.form-group {
+  @apply my-3;
+}
+
+.form-control {
+  @apply border border-gray-600 w-full p-2;
+}
+
+.char-counting-input {
+
+  .usage-count.warn {
+    @apply bg-red-500;
+  }
+}
+
+.buttoned-input {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  @apply border border-teal-mid;
+
+  input {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    height: 32px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 0;
+  }
+
+  button {
+    @apply bg-teal-mid text-white;
+    width: 60px;
+    border: none;
+    height: 32px;
+
+    &:hover {
+      @apply bg-white text-teal-mid border border-teal-mid;
+    }
+  }
+
+}

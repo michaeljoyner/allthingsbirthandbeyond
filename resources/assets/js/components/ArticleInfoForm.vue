@@ -1,9 +1,3 @@
-<style>
-    .article-info-form-component {
-        display: inline-block;
-    }
-</style>
-
 <template>
     <div class="article-info-form-component">
         <button class="dd-btn btn" @click="modalOpen = true">{{ buttonText }}</button>
@@ -23,12 +17,12 @@
                         <label for="description">Description</label>
                         <span class="error-message"
                               v-show="form.errors.description">{{ form.errors.description }}</span>
-                        <textarea name="description" v-model="form.data.description" class="form-control"></textarea>
+                        <textarea name="description" v-model="form.data.description" class="form-control h-40"></textarea>
                     </div>
                     <div class="form-group" :class="{'has-error': form.errors.intro}">
                         <label for="intro">Intro</label>
                         <span class="error-message" v-show="form.errors.intro">{{ form.errors.intro }}</span>
-                        <textarea name="intro" v-model="form.data.intro" class="form-control"></textarea>
+                        <textarea name="intro" v-model="form.data.intro" class="form-control h-40"></textarea>
                     </div>
                     <div class="modal-form-button-bar">
                         <button class="dd-btn btn btn-grey" type="button" @click="modalOpen = false">Cancel</button>

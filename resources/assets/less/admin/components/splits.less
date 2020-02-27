@@ -1,0 +1,49 @@
+.half-split {
+  display: flex;
+  justify-content: space-between;
+
+  & > * {
+    width: 47%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 47%;
+  }
+}
+
+.split-40 {
+  display: flex;
+  justify-content: space-between;
+
+  & > *:first-child {
+    width: 37%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 37%;
+  }
+
+  & > *:last-child {
+    width: 57%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 57%;
+  }
+}
+
+.split-60 {
+  display: flex;
+  justify-content: space-between;
+
+  & > *:last-child {
+    width: 37%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 37%;
+  }
+
+  & > *:first-child {
+    width: 57%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 57%;
+  }
+}

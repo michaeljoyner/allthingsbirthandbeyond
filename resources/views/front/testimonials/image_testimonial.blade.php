@@ -1,9 +1,9 @@
-<article class="fade-in-up an-del1 mv4 w-90 mw8 center pa4 bgc-light body-type flex">
-    <div class="dn w-40 flex-l justify-center items-start pt2">
-        <img src="{{ $testimonial->imageUrl('thumb') }}" alt="{{ $testimonial->client }}" width="400px" class="db center">
+<article class="fade-in-up p-16 bg-teal-soft max-w-3xl mx-auto mb-12 flex justify-between">
+    <div class="hidden md:block w-2/5">
+        <img src="{{ $testimonial->imageUrl('thumb') }}" alt="{{ $testimonial->client }}" width="400px" class="max-w-full mx-auto">
     </div>
-    <div class="w-100 w-60-l pl0 pl4-l flex-auto">
-        <p class="colour-p f5 f4-ns lh-copy mt0">{{ $testimonial->body }}</p>
-        <p class="colour-p f5 f4-ns lh-copy i tr mb0">&mdash; {{ $testimonial->client }}</p>
+    <div class="flex-1 pl-8">
+        <p class="type-b1 text-navy mb-8">{{ $testimonial->body }}</p>
+        <p class="type-b2 text-navy text-right">&mdash; {{ $testimonial->client }}</p>
     </div>
 </article>

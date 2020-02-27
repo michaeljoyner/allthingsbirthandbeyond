@@ -14,50 +14,55 @@
 @endsection
 
 @section('content')
-    <h2 class="f2 f1-ns colour-p strong-type tc mv5 ttu">Get In Touch</h2>
-    <p class="mv4 colour-p b f5 f4-ns tc ph3 body-type">Send me a message to set up a free initial consult.</p>
-    <form action="/contact" method="POST" class="w-90 mw6 center contact-form">
-        {!! csrf_field() !!}
-        <div class="{{ $errors->has('name') ? ' has-error' : '' }} mv3">
-            <label class="body-type lh-copy f5" for="name">Name</label>
-            @if($errors->has('name'))
-            <span class="error-message">{{ $errors->first('name') }}</span>
-            @endif
-            <input type="text" name="name" value="{{ old('name') }}" class="w-100 ba bw1 h2 lh-copy br2 colour-p pl2">
+    <section class="px-6 pt-40 pb-32">
+        <h2 class="type-h1 text-navy text-center">Get In Touch</h2>
+        <p class="type-b1 text-center max-w-2xl mx-auto my-12">Send me a message to set up a free initial consult.</p>
+        <form action="/contact" method="POST" class="max-w-lg mx-auto">
+            {!! csrf_field() !!}
+            <div class="{{ $errors->has('name') ? ' bg-red-100' : '' }} my-6">
+                <label class="type-h2 text-navy" for="name">Name</label>
+                @if($errors->has('name'))
+                    <span class="text-sm text-red-600">{{ $errors->first('name') }}</span>
+                @endif
+                <input type="text" name="name" value="{{ old('name') }}" class="p-2 w-full border border-purple rounded">
+            </div>
+            <div class="{{ $errors->has('email') ? ' bg-red-100' : '' }} my-6">
+                <label class="type-h2 text-navy" for="email">Email</label>
+                @if($errors->has('email'))
+                    <span class="text-sm text-red-600">{{ $errors->first('email') }}</span>
+                @endif
+                <input type="email" name="email" value="{{ old('email') }}" class="p-2 w-full border border-purple rounded">
+            </div>
+            <div class="{{ $errors->has('phone') ? ' bg-red-100' : '' }} my-6">
+                <label class="type-h2 text-navy" for="phone">Phone</label>
+                @if($errors->has('phone'))
+                    <span class="text-sm text-red-600">{{ $errors->first('phone') }}</span>
+                @endif
+                <input type="text" name="phone" value="{{ old('phone') }}" class="p-2 w-full border border-purple rounded">
+            </div>
+            <div class="{{ $errors->has('enquiry') ? ' bg-red-100' : '' }} my-6">
+                <label class="type-h2 text-navy" for="enquiry">Enquiry</label>
+                @if($errors->has('enquiry'))
+                    <span class="text-sm text-red-600">{{ $errors->first('enquiry') }}</span>
+                @endif
+                <textarea name="enquiry" class="p-2 w-full border border-purple rounded h-40">{{ old('enquiry') }}</textarea>
+            </div>
+            <div class="my-6 text-center">
+                <button type="submit" class="btn btn-purple">Send Message</button>
+            </div>
+            <input type="hidden" name="recaptcha_token" id="recaptcha-token">
+        </form>
+        <div class="flex flex-col items-center">
+            <p class="text-navy type-h2 mb-6">or</p>
+            <p class="text-navy type-h2 mb-6">Call on <a href="tel:+441904238471" class="hover:underline">+441904238471</a></p>
+            <p class="text-navy type-h2 mb-6">or</p>
+            <div class="tc mb6">
+                @include('front.partials.booking-button')
+            </div>
         </div>
-        <div class="{{ $errors->has('email') ? ' has-error' : '' }} mv3">
-            <label class="body-type lh-copy f5" for="email">Email</label>
-            @if($errors->has('email'))
-            <span class="error-message">{{ $errors->first('email') }}</span>
-            @endif
-            <input type="email" name="email" value="{{ old('email') }}" class="w-100 ba bw1 h2 lh-copy br2 colour-p pl2">
-        </div>
-        <div class="{{ $errors->has('phone') ? ' has-error' : '' }} mv3">
-            <label class="body-type lh-copy f5" for="phone">Phone</label>
-            @if($errors->has('phone'))
-            <span class="error-message">{{ $errors->first('phone') }}</span>
-            @endif
-            <input type="text" name="phone" value="{{ old('phone') }}" class="w-100 ba bw1 h2 lh-copy br2 colour-p pl2">
-        </div>
-        <div class="{{ $errors->has('enquiry') ? ' has-error' : '' }} mv3">
-            <label class="body-type lh-copy f5" for="enquiry">Enquiry</label>
-            @if($errors->has('enquiry'))
-            <span class="error-message">{{ $errors->first('enquiry') }}</span>
-            @endif
-            <textarea name="enquiry" class="w-100 ba bw1 lh-copy br2 colour-p input h4 pl2 bdc-p">{{ old('enquiry') }}</textarea>
-        </div>
-        <div class="mt4 mb5 tc">
-            <button type="submit" class="ph4 pv2 ba br3 bw2 colour-p f4 f3-ns hov-s strong-type ttu bgc-white bdc-p">Send Message</button>
-        </div>
-        <input type="hidden" name="recaptcha_token" id="recaptcha-token">
-    </form>
-    <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">or</p>
-    <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b tc">Call on <a href="tel:+441904238471" class="colour-p hov-s">+441904238471</a></p>
 
-    <p class="mv4 colour-p f4 f3-ns tc ph3 body-type b">or</p>
-    <div class="tc mb6">
-        @include('front.partials.booking-button')
-    </div>
+    </section>
+
 
 @endsection
 

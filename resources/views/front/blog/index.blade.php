@@ -13,19 +13,22 @@
 @endsection
 
 @section('content')
-    <h2 class="f2 f1-ns colour-p strong-type tc mt5 mb2 ttu">Blog</h2>
-    <section class="mv4 flex justify-around mw8 center flex-wrap">
-    @foreach($articles as $article)
-            <a href="/blog/{{ $article->slug }}" class="w-40-ns w-90 mv3 flex link">
-                <article class="pa3 bgc-light flex flex-column hover-soft-bg">
+    <section class="px-6 pt-40 pb-20">
+        <h1 class="type-h1 text-center text-purple">My Blog</h1>
+    </section>
+    <section class="px-6 py-20 flex flex-wrap justify-center">
+        @foreach($articles as $article)
+            <a href="/blog/{{ $article->slug }}" class="mb-12 mx-8 group">
+                <article class="w-80 flex flex-col p-8 bg-teal-soft h-full">
                     <img src="{{ $article->titleImage('thumb') }}"
                          alt="{{ $article->title }}">
-                    <p class="f3 bold strong-type colour-p mb1">{{ $article->title }}</p>
-                    <p class="colour-s mv1 body-type lh-copy">{{ $article->published_on->toFormattedDateString() }}</p>
-                    <p class="colour-d body-type">{{ $article->intro }}</p>
+                    <p class="text-sm my-2">{{ $article->published_on->toFormattedDateString() }}</p>
+                    <p class="type-h2 my-4 text-navy group-hover:text-teal-mid">{{ $article->title }}</p>
+                    <p class="font-sans">{{ $article->intro }}</p>
                 </article>
             </a>
-    @endforeach
+        @endforeach
     </section>
+
 
 @endsection

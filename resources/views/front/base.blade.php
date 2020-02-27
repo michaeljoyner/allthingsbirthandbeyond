@@ -7,8 +7,8 @@
         @yield('title', 'Birth and Beyond')
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ mix('css/fapp.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ mix('css/front.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="google-site-verification" content="YPEZBzl7lq8D_p6SQmvzC5Jcd1OigYZVPHULEI2PnAQ" />
     @yield('head')
@@ -20,16 +20,14 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body  class="{{ $pageName ?? '' }}">
+<body  class="{{ $pageName ?? '' }} text-navy font-sans">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-    @include('front.partials.navbar')
-    <div class="page-content">
-        <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-        @yield('content')
-    </div>
+    @yield('content')
     @include('front.partials.footer')
+    @include('front.partials.navbar')
 
 
 <script src="{{ mix('js/front.js') }}"></script>

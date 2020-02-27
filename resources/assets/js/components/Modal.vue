@@ -1,7 +1,3 @@
-<style>
-
-</style>
-
 <template>
     <transition name="modal">
     <div class="modal-mask" v-show="show">

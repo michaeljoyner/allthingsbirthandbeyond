@@ -1,4 +1,4 @@
-<article class="fade-in-up an-del2 mv4 w-90 mw8 center pa4 bgc-light body-type">
-    <p class="colour-p f5 f4-ns lh-copy mt0">{{ $testimonial->body }}</p>
-    <p class="colour-p f5 f4-ns lh-copy i tr mb0">&mdash; {{ $testimonial->client }}</p>
+<article class="fade-in-up p-16 bg-teal-soft max-w-3xl mx-auto mb-12">
+    <p class="type-b1 text-navy mb-8">{{ $testimonial->body }}</p>
+    <p class="type-b2 text-navy text-right">&mdash; {{ $testimonial->client }}</p>
 </article>

@@ -1,8 +1,6 @@
-<style></style>
-
 <template>
     <span class="delete-modal-button-component">
-        <button class="dd-btn btn" @click="modalOpen = true">Delete</button>
+        <button class="dd-btn-red btn" @click="modalOpen = true">Delete</button>
         <modal :show="modalOpen" class="form-modal">
             <div slot="header">
                 <h3>Are you sure?</h3>

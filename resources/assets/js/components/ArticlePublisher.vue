@@ -1,5 +1,3 @@
-<style></style>
-
 <template>
     <div class="article-publisher-component">
         <p class="alert">STATUS:<br>{{ publish_status }}</p>

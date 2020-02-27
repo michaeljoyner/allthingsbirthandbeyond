@@ -1,34 +1,34 @@
-<section class="db flex-ns">
-    <div class="w-100 w-70-m w-50-l pt4 ph3">
-        <h2 class="mb5 f2 f1-ns tc colour-p ttu strong-type">Did You Know?</h2>
-        <p class="body-type colour-p f4 tc mb4 b">Doula involvement in pregnancy, birth and beyond has had these positive outcomes:</p>
-        <ul class="list pl0">
-            <li class="tc mb3 mb4-ns">
-                <p class="strong-type f4 f3-ns mv2 colour-p">34%</p>
-                <p class="body-type colour-p mv2">Decrease in the risk of being dissatisfied with the birth experience</p>
+<section class="flex justify-between">
+    <div class="w-full md:w-1/2 px-6 py-12 max-w-xl mx-auto">
+        <h2 class="type-h1 text-center text-purple">Did You Know?</h2>
+        <p class="type-h3 text-center my-8 text-navy">Doula involvement in pregnancy, birth and beyond has had these positive outcomes:</p>
+        <ul class="">
+            <li class="text-center my-6">
+                <p class="text-navy type-h1">34%</p>
+                <p class="type-b1">Decrease in the risk of being dissatisfied with the birth experience</p>
             </li>
-            <li class="tc mb3 mb4-ns">
-                <p class="strong-type f4 f3-ns mv2 colour-p">31%</p>
-                <p class="body-type colour-p mv2">Decrease in the use of labour augmentation</p>
+            <li class="text-center my-6">
+                <p class="text-navy type-h1">31%</p>
+                <p class="type-b1">Decrease in the use of labour augmentation</p>
             </li>
-            <li class="tc mb3 mb4-ns">
-                <p class="strong-type f4 f3-ns mv2 colour-p">28%</p>
-                <p class="body-type colour-p mv2">Decrease in the risk of C-section</p>
+            <li class="text-center my-6">
+                <p class="text-navy type-h1">28%</p>
+                <p class="type-b1">Decrease in the risk of C-section</p>
             </li>
-            <li class="tc mb3 mb4-ns">
-                <p class="strong-type f4 f3-ns mv2 colour-p">14%</p>
-                <p class="body-type colour-p mv2">Decrease in the risk of newborns being admitted to a special care unit</p>
+            <li class="text-center my-6">
+                <p class="text-navy type-h1">14%</p>
+                <p class="type-b1">Decrease in the risk of newborns being admitted to a special care unit</p>
             </li>
-            <li class="tc mb3 mb4-ns">
-                <p class="strong-type f4 f3-ns mv2 colour-p">12%</p>
-                <p class="body-type colour-p mv2">Increase in the likelihood of a spontaneous vaginal birth</p>
+            <li class="text-center my-6">
+                <p class="text-navy type-h1">12%</p>
+                <p class="type-b1">Increase in the likelihood of a spontaneous vaginal birth</p>
             </li>
-            <li class="tc mb3 mb4-ns">
-                <p class="strong-type f4 f3-ns mv2 colour-p">9%</p>
-                <p class="body-type colour-p mv2">Decrease in the use of any medications for pain relief</p>
+            <li class="text-center my-6">
+                <p class="text-navy type-h1">9%</p>
+                <p class="type-b1">Decrease in the use of any medications for pain relief</p>
             </li>
         </ul>
-        <p class="tr pr3 pr5-ns f5 f5-ns colour-p i body-type mv5">&mdash; Hodnett et al, 2012</p>
+        <p class="type-b2 text-right">&mdash; Hodnett et al, 2012</p>
     </div>
-    <div class="dn db-ns did-you-know-image-box w-50 cover bg-center"></div>
+    <div class="hidden md:block w-1/2 did-you-know-image"></div>
 </section>

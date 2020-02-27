@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="dd-page-header">
-        <h1 class="page-title">Users</h1>
+        <h1 class="page-title text-5xl">Users</h1>
         <div class="page-header-actions">
             <add-user></add-user>
         </div>

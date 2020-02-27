@@ -1,5 +1,3 @@
-<style></style>
-
 <template>
     <span class="add-menu-group-component">
         <button class="dd-btn btn" @click="modalOpen = true">{{ buttonText }}</button>

@@ -1,18 +1,18 @@
 <template>
     <div class="articles-list-component">
         <div class="card">
-            <table>
+            <table class="shadow bg-gray-100">
                 <thead>
                 <tr>
-                    <th>Date</th>
-                    <th>Title</th>
-                    <th>Published Status</th>
+                    <th class="text-left">Date</th>
+                    <th class="text-left">Title</th>
+                    <th class="text-left">Published Status</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="article in articles" :key="article.id">
-                    <td>{{ article.created_at }}</td>
-                    <td><a :href="`/admin/articles/${article.id}`">{{ article.title }}</a></td>
+                <tr v-for="article in articles" :key="article.id" class="border-b">
+                    <td class="">{{ article.created_at }}</td>
+                    <td class=""><a :href="`/admin/articles/${article.id}`" class="hover:underline hover:text-purple">{{ article.title }}</a></td>
                     <td>{{ article.published_status }}</td>
                 </tr>
                 </tbody>
@@ -60,7 +60,7 @@
     }
 </script>
 
-<style scoped lang="scss" type="text/scss">
+<style scoped lang="less">
     table {
         width: 100%;
     }

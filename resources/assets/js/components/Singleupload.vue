@@ -1,7 +1,3 @@
-<style>
-
-</style>
-
 <template>
     <div class="inner-box">
         <label :for="`profile-upload-${unique}`"

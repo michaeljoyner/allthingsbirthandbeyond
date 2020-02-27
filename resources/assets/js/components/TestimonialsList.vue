@@ -1,5 +1,3 @@
-<style></style>
-
 <template>
     <div class="testimonials-list-component">
         <testimonial v-for="testimonial in testimonials"

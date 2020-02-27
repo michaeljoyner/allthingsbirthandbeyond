@@ -3,7 +3,7 @@
 @section('content')
     <form action="/admin/login"
           method="POST"
-          class="login-form dd-form form-horizontal form-narrow">
+          class="login-form dd-form form-horizontal form-narrow max-w-xl mx-auto">
         {!! csrf_field() !!}
         <img class="login-logo"
              src="/images/logos/logo_full.svg"
@@ -28,7 +28,7 @@
                    value="{{ old('password') }}"
                    class="form-control">
         </div>
-        <div class="secondary-login-actions form-group">
+        <div class="secondary-login-actions my-6 form-group">
             <div class="dd-checkbox-option">
                 <input type="checkbox"
                        name="remember"
@@ -43,7 +43,7 @@
         </div>
         <div class="form-group">
             <button type="submit"
-                    class="btn form-control dd-btn">Login
+                    class="btn w-full dd-btn">Login
             </button>
         </div>
     </form>
