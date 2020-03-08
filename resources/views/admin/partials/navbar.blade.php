@@ -12,7 +12,7 @@
         <a class="mx-4 hover:underline" href="/admin/users">Users</a>
 
         <dropdown v-cloak
-                  name="Mooz"
+                  name="{{ auth()->user()->name }}"
                   class="text-white hover:text-mustard h-12 flex items-center h-16 bg-deep-navy px-4">
             <div slot="dropdown_content"
                  class="py-3">
