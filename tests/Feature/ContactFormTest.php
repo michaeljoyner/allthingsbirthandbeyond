@@ -22,7 +22,8 @@ class ContactFormTest extends TestCase
             'name'    => 'TEST NAME',
             'email'   => 'test@example.com',
             'phone'   => 'TEST PHONE',
-            'enquiry' => 'TEST MESSAGE'
+            'enquiry' => 'TEST MESSAGE',
+            'recaptcha_token' => 'TEST_TOKEN'
         ]);
 
         $response->assertStatus(302);

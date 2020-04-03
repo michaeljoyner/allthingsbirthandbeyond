@@ -24,7 +24,7 @@ class TestimonialImagesTest extends TestCase
         $testimonial->setImage(UploadedFile::fake()->image('testpic.jpg'));
 
         $this->assertCount(1, $testimonial->getMedia('model-image'));
-        $this->assertContains('testpic', $testimonial->getMedia('model-image')->first()->getPath());
+        $this->assertStringContainsString('testpic', $testimonial->getMedia('model-image')->first()->getPath());
     }
 
     /**
@@ -68,7 +68,7 @@ class TestimonialImagesTest extends TestCase
         $testimonial->setImage(UploadedFile::fake()->image('testpic_two.jpg'));
 
         $this->assertCount(1, $testimonial->getMedia('model-image'));
-        $this->assertContains('testpic_two', $testimonial->getMedia('model-image')->first()->getPath());
+        $this->assertStringContainsString('testpic_two', $testimonial->getMedia('model-image')->first()->getPath());
     }
 
     /**

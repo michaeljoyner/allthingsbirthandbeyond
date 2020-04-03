@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\AntiSpammer;
 use App\Mail\ContactMessage;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
@@ -25,20 +26,11 @@ class ContactController extends Controller
             'recaptcha_token' => 'required'
         ]);
 
-        $response = $client->post("https://www.google.com/recaptcha/api/siteverify", [
-            'form_params' => [
-                'secret' => config('services.google.recaptcha.secret'),
-                'response' => request('recaptcha_token')
-            ]
-        ]);
-
-        $contents = json_decode($response->getBody()->getContents(), true);
-        $score = Arr::get($contents, 'score', 0);
-        $action = Arr::get($contents, 'action', '');
-
-        if($score < 0.5 || $action !== 'contact_form') {
-            return redirect('/');
+        if(!AntiSpammer::accepts(request('recaptcha_token'))) {
+            return redirect("/");
         }
+
+
 
         Mail::to('hello@allthingsbirthandbeyond.co.uk')->send(new ContactMessage(request()->only(['name', 'email', 'phone', 'enquiry'])));
         return redirect('/thanks')->with(['sender' => request('name')]);
