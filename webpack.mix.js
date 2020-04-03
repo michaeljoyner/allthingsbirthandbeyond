@@ -22,5 +22,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
            tailwindcss('./tailwind.config.js'),
        ]
    })
-   .purgeCss()
+   .purgeCss({
+       whitelistPatterns: [/article-content/]
+   })
     .version();

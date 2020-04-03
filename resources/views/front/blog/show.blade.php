@@ -18,7 +18,7 @@
         <p class="text-center text-purple type-b1 mb-20">{{ $article->published_on ? $article->published_on->toFormattedDateString() : 'Not published' }}</p>
         <img src="{{ $article->titleImage('large_tile') }}"
              alt="{{ $article->title }}" class="block mx-auto max-w-full mb-20">
-        <div class="max-w-2xl mx-auto type-b1">
+        <div class="max-w-2xl mx-auto type-b1 article-content">
             {!! $article->body !!}
         </div>
     </section>
