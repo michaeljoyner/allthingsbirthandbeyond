@@ -22,4 +22,5 @@
     @include('front.home.inspiration')
 {{--    @include('front.home.pullquote')--}}
     @include('front.home.testimonial')
+    @include('front.home.affiliates')
 @endsection
