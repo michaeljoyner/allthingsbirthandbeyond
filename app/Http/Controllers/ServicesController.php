@@ -56,7 +56,7 @@ class ServicesController extends Controller
                 'icon' => 'parenting_mentor.svg'
             ],
             'infant-feeding-support' => [
-                'name' => 'Infant Feeding Support: On-line',
+                'name' => 'Infant Feeding Support',
                 'view' => 'infant-feeding-support',
                 'icon' => 'infant_feeding_support.svg'
             ],

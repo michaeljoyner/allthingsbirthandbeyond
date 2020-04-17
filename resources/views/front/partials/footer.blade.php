@@ -4,7 +4,7 @@
             <p class="type-h1">Connect</p>
             <div class="flex mb-6">
                 <a target="_blank" class="mr2" href="https://www.facebook.com/allthingsbirthandbeyond">@include('svgicons.facebook', ['classes' => 'fill-current mr-3 hover:text-teal-mid'])</a>
-                <a target="_blank" class="mr2" href="https://www.instagram.com/all.things.birth.and.beyond/?hl=en">@include('svgicons.instagram', ['classes' => 'fill-current mr-3 hover:text-teal-mid'])</a>
+                <a target="_blank" class="mr2" href="https://www.instagram.com/allthingsbirthandbeyond/?hl=en">@include('svgicons.instagram', ['classes' => 'fill-current mr-3 hover:text-teal-mid'])</a>
                 <a target="_blank" class="mr2" href="https://www.linkedin.com/in/melody-robinson-a7266a14a/">@include('svgicons.linkedin', ['classes' => 'fill-current mr-3 hover:text-teal-mid'])</a>
                 <a target="_blank" class="mr2" href="https://twitter.com/Nurturing_You">@include('svgicons.twitter_new', ['classes' => 'fill-current mr-3 hover:text-teal-mid'])</a>
             </div>
