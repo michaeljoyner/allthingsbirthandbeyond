@@ -4,13 +4,13 @@ namespace App\Testimonials;
 
 use App\HasModelImage;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia\HasMedia;
-use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
-use Spatie\MediaLibrary\Models\Media;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class Testimonial extends Model implements HasMedia
 {
-    use HasMediaTrait, HasModelImage;
+    use InteractsWithMedia, HasModelImage;
 
     const DEFAULT_IMAGE_SRC = '/images/defaults/four_by_three.jpg';
 
@@ -20,7 +20,7 @@ class Testimonial extends Model implements HasMedia
 
     protected $casts = ['published' => 'boolean'];
 
-    public function registerMediaConversions(Media $media = null)
+    public function registerMediaConversions(Media $media = null): void
     {
         $this->addMediaConversion('thumb')
              ->width(400)
