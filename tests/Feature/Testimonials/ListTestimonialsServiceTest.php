@@ -23,7 +23,7 @@ class ListTestimonialsServiceTest extends TestCase
         $response = $this->asLoggedInUser()->json('GET', '/admin/services/testimonials');
         $response->assertStatus(200);
 
-        $fetched_testimonials = $response->decodeResponseJson();
+        $fetched_testimonials = $response->json();
 
         $this->assertCount(10, $fetched_testimonials);
 

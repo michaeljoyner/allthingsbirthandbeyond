@@ -37,7 +37,7 @@ class CreateTestimonialTest extends TestCase
 
         $response = $this->asLoggedInUser()->json('POST', '/admin/testimonials', $testimonial_data);
         $response->assertStatus(422);
-        $this->assertArrayHasKey('client', $response->decodeResponseJson()['errors']);
+        $this->assertArrayHasKey('client', $response->json()['errors']);
 
         $this->assertDatabaseMissing('testimonials', $testimonial_data);
     }
@@ -53,7 +53,7 @@ class CreateTestimonialTest extends TestCase
 
         $response = $this->asLoggedInUser()->json('POST', '/admin/testimonials', $testimonial_data);
         $response->assertStatus(422);
-        $this->assertArrayHasKey('body', $response->decodeResponseJson()['errors']);
+        $this->assertArrayHasKey('body', $response->json()['errors']);
 
         $this->assertDatabaseMissing('testimonials', $testimonial_data);
     }
@@ -70,7 +70,7 @@ class CreateTestimonialTest extends TestCase
 
         $response = $this->asLoggedInUser()->json('POST', '/admin/testimonials', $testimonial_data);
         $response->assertStatus(422);
-        $this->assertArrayHasKey('client', $response->decodeResponseJson()['errors']);
+        $this->assertArrayHasKey('client', $response->json()['errors']);
 
         $this->assertDatabaseMissing('testimonials', $testimonial_data);
     }
