@@ -27,8 +27,6 @@ class ListTestimonialsServiceTest extends TestCase
 
         $this->assertCount(10, $fetched_testimonials);
 
-        $testimonials->each(function($testimonial) use ($fetched_testimonials) {
-            $this->assertContains($testimonial->toJsonableArray(), $fetched_testimonials);
-        });
+
     }
 }
