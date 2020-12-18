@@ -17,7 +17,7 @@
     <section class="px-6 pt-40 pb-32">
         <h2 class="type-h1 text-navy text-center">Get In Touch</h2>
         <p class="type-b1 text-center max-w-2xl mx-auto my-12">Send me a message to set up a free initial consult.</p>
-        <form action="/contact" method="POST" class="max-w-lg mx-auto">
+        <form action="/contact" method="POST" class="max-w-lg mx-auto contact-form">
             {!! csrf_field() !!}
             <div class="{{ $errors->has('name') ? ' bg-red-100' : '' }} my-6">
                 <label class="type-h2 text-navy" for="name">Name</label>
