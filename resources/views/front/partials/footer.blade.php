@@ -18,6 +18,10 @@
             <p class="type-b1">47 St Aelreds Mews, York, England, YO31 ORW</p>
             <p class="type-b1">Registered in England and Wales</p>
             <p class="type-b1">Registration number: 10901143</p>
+            <div class="flex mt-4">
+                <a class="mr-6 hover:text-purple-soft" href="/privacy-policy">Privacy Policy</a>
+                <a class="hover:text-purple-soft" href="/cookie-policy">Cookie Policy</a>
+            </div>
         </div>
     </div>
 
