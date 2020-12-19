@@ -25,6 +25,9 @@ Route::get('blog/{slug}', 'BlogController@show');
 Route::get('contact', 'ContactController@show');
 Route::post('contact', 'ContactController@store');
 
+Route::view('privacy-policy', 'front.policies.privacy');
+Route::view('cookie-policy', 'front.policies.cookies');
+
 Route::get('admin/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('admin/login', 'Auth\LoginController@login');
 Route::post('admin/logout', 'Auth\LoginController@logout')->name('logout');

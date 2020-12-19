@@ -27,7 +27,7 @@
 <div class="flex-1">
     @yield('content')
 </div>
-    
+
     @include('front.partials.footer')
     @include('front.partials.navbar')
 
