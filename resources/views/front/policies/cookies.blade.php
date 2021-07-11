@@ -28,6 +28,6 @@
                 </ul>
             </li>
         </ul>
-        
+
     </div>
 @endsection

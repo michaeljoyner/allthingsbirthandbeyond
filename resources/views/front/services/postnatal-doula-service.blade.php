@@ -18,7 +18,7 @@
         'title' => $service['name'],
         'icon' => $service['icon'],
         'terms' => [
-                '3hrs & up - £20/hr',
+                '3hrs & up - £25/hr',
             ]
         ])
 
